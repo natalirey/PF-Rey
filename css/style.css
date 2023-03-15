@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* icono, navegador, cuotas y copyright. igual para todas las paginas*/
+.icon{
+    width: 50px;
+    height: 50px;
+    }
+.navegador .logo{
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 25px;
+}
+.navegador{
+    width: 100%;
+    height:60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.navegador,.navegador ul li a, .navegador ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #B8E0D2;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+.navegador ul li a{
+    height: 60px;
+    display: block;
+    padding: 20px 30px 20px 30px;
+}
+.navegador ul{
+    display: flex;
+}
+.cuotas{
+    position: fixed;
+    top:0;
+}
+.cuotas,.copyright p {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #95b8d1;
+}
+
+    /* pagina de inicio*/
+
+.portada{
+    position: relative;
+    z-index: -2;
+}
+.portada video{
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    object-fit: cover;
+    
+}
+.portada h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 15%;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px black;
+}
+body{
+    background-color: #fff;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.inicio{
+    margin: 100px 50px 50px 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.titulo{
+    width: 550px;
+    text-align: justify;
+    font-size: 25px;
+}
+.personalizar-ahora{
+    width: 210px;
+    color: black;
+    background-color:#B8E0D2;
+    text-align: center;
+    text-decoration:none;
+    font-weight:600px;
+    font-size:20px;
+    border: 2px solid #3B1C2E;
+    border-radius: 6px;
+    padding:15px;
+    margin: 15px;
+    display: block;
+}
+.contenedor-img-inicio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.messi-remera{
+    width: 280px;
+    border-radius: 15%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #54457f;
+    object-fit: cover;
+}
+.messi-copa{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b84a62;
+    object-fit: cover;
+}
+.carousel-inner{
+    width: 40%;
+    z-index: -2;
+    margin: 0 auto;
+}
+
+    /* pagina precios y talles */
+
+.portada-precios{
+    position: relative;
+    z-index: -2;
+}
+.portada-precios img{
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+.portada-precios h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px
+}
+.remera{
+    width: 20%;
+    background-color:#c6ca53;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.remera h3{
+    margin: 8px;
+}
+.remera img{
+    width: 90%;
+    margin: 10px;
+}
+.remera h4{
+    margin-top: 15px;
+}
+.precios{
+    display: flex;
+    justify-content: center;
+}
+.talles-medidas{
+    display: flex;
+    justify-content: center;
+}
+.talles{
+    width: 26%;
+    background-color:#c6ca53;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.talles img{
+    width: 80%;
+}
+.talles h2{
+    margin: 20px;
+}
+.como-medir{
+    width: 40%;
+    background-color:#c6ca53;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.como-medir h2{
+    margin: 20px;
+}
+.como-medir iframe{
+    width: 80%;
+    height: 70%;
+}
+
+    /*pagina preguntas frecuentes*/
+
+.portada-preguntas{
+    position: relative;
+    z-index: -2;
+}
+.portada-preguntas img{
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+.portada-preguntas h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.tarjetas-preguntas{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+
+}
+.tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4{
+    width: 40%;
+    height: 280px;
+    background-color: #86C443;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.tarjeta1 img{
+    width: 50px;
+}
+.tarjeta2 img{
+    width: 50px;
+}
+.tarjeta3 img{
+    width: 50px;
+}
+.tarjeta3 ul{
+    list-style: none
+}
+.tarjeta4 img{
+    width: 45px;
+}
+.mapa{
+    width: 90%;
+    height: 100px;
+}
+
+/* pagina personalizar ahora*/ 
+.portada-personalizar {
+    position: relative;
+    z-index: -2;
+}
+.portada-personalizar img{
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+.portada-personalizar h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.form-personalizar{
+    display: grid;
+    background-color: #eac4d5;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "completa completa "
+                        "gracias   gracias  "
+                        "nombre    apellido"
+                        "cel        email"
+                        "calle     altura  "
+                        "piso      localidad"
+                        "provincia  codigo"
+                        "remera     talle "
+                        "colores   colores"
+                        "btn        btn    ";
+}
+.form-personalizar label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form-personalizar label input{
+    background-color: #eac4d5;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.form-personalizar h2{
+    grid-area: completa;
+    text-align: center;
+}
+.form-personalizar h3{
+    grid-area: gracias;
+    text-align: center;
+}
+.form-personalizar label:nth-child(3){
+    grid-area: nombre;
+}
+.form-personalizar label:nth-child(4){
+    grid-area: apellido;
+}
+.form-personalizar label:nth-child(5){
+    grid-area: cel;
+}
+.form-personalizar label:nth-child(6){
+    grid-area: email;
+}
+.form-personalizar label:nth-child(7){
+    grid-area: calle;
+}
+.form-personalizar label:nth-child(8){
+    grid-area: altura;
+}
+.form-personalizar label:nth-child(9){
+    grid-area: piso;
+}
+.form-personalizar label:nth-child(10){
+    grid-area: localidad;
+}
+.form-personalizar label:nth-child(11){
+    grid-area: provincia;
+}
+.form-personalizar label:nth-child(12){
+    grid-area: codigo;
+}
+.form-personalizar label:nth-child(13){
+    grid-area: remera;
+}
+.form-personalizar label:nth-child(14){
+    grid-area: talle;
+}
+.form-personalizar label:nth-child(15){
+    grid-area: colores;
+}
+.form-contacto .btn{
+    grid-area: btn;
+}
+
+/* pagina contacto */
+.portada-contacto{
+    position: relative;
+    z-index: -2;
+}
+.portada-contacto img{
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+    object-fit:cover;
+}
+.portada-contacto h1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px
+}
+.form-contacto{
+    display: grid;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    background-color: #eac4d5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:   "contacto  contacto"
+                            "texto    texto"
+                            "nombre   apellido"
+                            "email     asunto"
+                            "mensaje   mensaje"
+                            "novedades novedades"
+                            "limpiar    enviar";
+}
+.form-contacto label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form-contacto label input, .form-contacto label textarea{
+    background-color: #eac4d5;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.form-contacto h2{
+    grid-area: contacto;
+    text-align: center;
+}
+.form-contacto p{
+    grid-area: texto;
+    text-align: center;
+}
+.form-contacto label:nth-child(3){
+    grid-area: nombre;
+}
+.form-contacto label:nth-child(4){
+    grid-area: apellido;
+}
+.form-contacto label:nth-child(5){
+    grid-area: email;
+}
+.form-contacto label:nth-child(6){
+    grid-area: asunto;
+}
+.form-contacto label:nth-child(7){
+    grid-area: mensaje;
+}
+.form-contacto label:nth-child(8){
+    grid-area: novedades;
+    text-align: center;
+}
+.form-contacto .limpiar{
+    grid-area: limpiar;
+    width: 40%;
+    border-radius: 10px;
+    margin: 5px;
+    justify-self: end;
+}
+.form-contacto .enviar{
+    grid-area: enviar;
+    width: 40%;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: outset;
+    justify-self: start;
+}
+.logos-contacto {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+/* footer para todas las paginas */
+footer, footer h3,footer h3 p, .nav-footer ul li a, .nav-footer ul{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: #B8E0D2;
+    text-decoration: none;
+    list-style: none;
+}
+.logo-footer{
+    width: 20px;
+    height: 20px;
+}
+.div-footer{
+    margin:20px 10px 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.div-div-footer{
+    margin: 15px;
+}
+
