@@ -4,6 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.container,.container-fluid,.row{
+    margin: 0;
+}
 
     /* icono, navegador, cuotas y copyright. igual para todas las paginas*/
 .icon{
@@ -23,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
 }
 .navegador,.navegador ul li a, .navegador ul{
     font-family: 'Roboto', sans-serif;
@@ -39,19 +48,67 @@
 }
 .navegador ul{
     display: flex;
+    transition: 0.5s;
 }
 .cuotas{
     position: fixed;
     top:0;
+    z-index: 100;
 }
-.cuotas,.copyright p {
+.cuotas , .footer__copyright p{
     width: 100%;
     height: 20px;
     text-align: center;
     font-size: 15px;
     background-color: #95b8d1;
+    margin-bottom: 0;
+}
+.navegador .fa-bars{
+    display: none;
 }
 
+@media(max-width:1070px){
+    .navegador, .navegador ul li a,.navegador .logo{
+        height:50px;
+        font-size: 15px;
+        margin-top: 18px;
+    }
+    .navegador ul li a,.navegador .logo{
+        height:50px;
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .cuotas , .footer__copyright p{
+        height: 18px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:920px){
+    .navegador .fa-bars{
+        display: block;
+        font-size: 32px;
+        margin: 10px;
+        
+    }
+    .navegador .fa-bars:hover + ul{
+        right: 0;
+    }
+    .navegador ul:hover{
+        right: 0;
+    }
+    .navegador ul{
+        right:-350px;
+        top: 0;
+        background-color: #B8E0D2;
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        z-index: 5;
+        flex-direction: column;
+        align-items: start;
+    }
+}
     /* pagina de inicio*/
 
 .portada{
@@ -74,12 +131,6 @@
     font-size: 30px;
     letter-spacing: 5px;
     -webkit-text-stroke: 1px black;
-}
-body{
-    background-color: #fff;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
 }
 .inicio{
     margin: 100px 50px 50px 50px;
@@ -131,7 +182,18 @@ body{
 .carousel-inner{
     width: 40%;
     z-index: -2;
-    margin: 0 auto;
+    margin: 60px auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #776b72;
+    border-radius: 5px;
+    position: relative;
+}
+.carousel-control-prev-icon{
+    left: 250px;
+}
+.carousel-control-next-icon{
+    right: 250px;
 }
 
     /* pagina precios y talles */
@@ -268,6 +330,49 @@ body{
 .mapa{
     width: 90%;
     height: 100px;
+}
+/* media q */
+
+@media(max-width:1200px){
+    .tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4{
+        width: 60%;
+    }
+    .tarjetas-preguntas{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+    .portada-preguntas img{
+        margin-top: 18px;
+    }
+}
+@media(max-width:1100px){
+    .tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4{
+        font-size: 14px;
+    }
+    .portada-preguntas h1{
+        font-size: 20px;
+    }
+}
+@media(max-width:678px){
+    .tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4{
+        width: 90%;
+    }
+}
+@media(max-width:952px){
+    .portada-preguntas img{
+        height: 300px;
+    }
+}
+@media(max-width:720px){
+    .portada-preguntas img{
+        height: 250px;
+    }
+}
+@media(max-width:596px){
+    .portada-preguntas img{
+        height: 220px;
+    }
 }
 
 /* pagina personalizar ahora*/ 
@@ -473,9 +578,9 @@ body{
 
 
 /* footer para todas las paginas */
-footer, footer h3,footer h3 p, .nav-footer ul li a, .nav-footer ul{
+footer, footer h3,footer h3 p, .footer__nav ul li a, .footer__nav ul{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: black;
     background-color: #B8E0D2;
     text-decoration: none;
@@ -485,13 +590,22 @@ footer, footer h3,footer h3 p, .nav-footer ul li a, .nav-footer ul{
     width: 20px;
     height: 20px;
 }
-.div-footer{
+.footer{
     margin:20px 10px 20px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.div-div-footer{
+.footer__informacion{
     margin: 15px;
 }
-
+.footer__informacion--media{
+    display: flex;
+    gap: 50px;
+}
+/* media q */
+@media(max-width: 1070px){
+    .footer, footer h3,footer h3 p, .footer__nav ul li a, .footer__nav ul{
+        font-size: 14px;
+    }
+}
