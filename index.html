@@ -13,75 +13,67 @@
 <body>
     <header>
         <p class="cuotas">3 cuotas sin interés y envíos a todo el país</p>
-        <nav class="navegador">
-            <img class="logo" src="./multimedia/imagenes/real-mambo-celeste.png" alt="Real Mambo logo">
+        <nav class="navegador d-flex justify-content-between">
+            <a href="./index.html"><img class="logo" src="./multimedia/imagenes/real-mambo-celeste.png" alt="Real Mambo logo"></a>
             <i class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/personalizar-ahora.html">Personalizar Ahora</a></li>
-                <li><a href="./pages/precios-y-talles.html">Precios y Talles</a></li>
-                <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+            <ul class="d-flex">
+                <li><a href="./index.html" class="d-block">Inicio</a></li>
+                <li><a href="./pages/personalizar-ahora.html" class="d-block">Personalizar Ahora</a></li>
+                <li><a href="./pages/precios-y-talles.html" class="d-block">Precios y Talles</a></li>
+                <li><a href="./pages/preguntas-frecuentes.html" class="d-block">Preguntas Frecuentes</a></li>
+                <li><a href="./pages/contacto.html" class="d-block">Contacto</a></li>
             </ul>
         </nav>
-        <div class="portada">
+        <div class="portada-inicio">
             <video src="./multimedia/videos/video-arg-campeon.mp4" muted autoplay loop></video>
             <h1>SOMOS ÚNICOS</h1>
         </div>
     </header>
     <main>
-        <section class="inicio">
-            <div>
-                <h2 class="titulo">Hacemos remeras únicas para personas únicas. Mandanos tu idea y nos encargamos de hacer tu MAMBO REAL. </h2>
-                <a class="personalizar-ahora" href="./pages/personalizar-ahora.html">Personalizar ahora</a>
+        <section class="inicio row d-flex flex-wrap justify-content-center justify-content-xl-start align-items-start gap-1 m-5">
+            <div class="titulo col-10 col-md-12">
+                <h2 class="fs-3">Hacemos remeras únicas para personas únicas. Mandanos tu idea y nos encargamos de hacer tu MAMBO REAL. </h2>
+                <a href="./pages/personalizar-ahora.html"><button type="button" class="btn btn-primary mx-5 my-2">Perzonalizar ahora</button></a>
             </div>
-            <div class="contenedor-img-inicio">
+            <div class="img-inicio d-flex justify-content-center justify-content-xl-start align-items-center gap-2 gap-lg-5 col-10 col-sm-12 col-xl-4">
                 <img class="messi-remera" src="./multimedia/imagenes/messi-remera.jpeg" alt="Remera de messi">
-                <img class="messi-copa" src="./multimedia/imagenes/messi-copa.jpg" alt="Messi y la copa">
+                <img class="messi-copa " src="./multimedia/imagenes/messi-copa.jpg" alt="Messi y la copa">
             </div>
         </section>
         <section class="row justify-content-center">
-            <div id="carouselExampleAutoplaying" class="carousel slide col-11" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./multimedia/imagenes/reme-blanca-dibu.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-blanca-dibu.jpeg" class="d-block w-100" alt="Remera Dibu Martinez">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-negra-brbad.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-negra-brbad.jpeg" class="d-block w-100" alt="Remera Breaking Bad">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-blanca-mundial.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-blanca-mundial.jpeg" class="d-block w-100" alt="Remera Mundial">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-negra-rick.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-negra-rick.jpeg" class="d-block w-100" alt="Remera Ricky y Morty">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-blanca-homero.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-blanca-homero.jpeg" class="d-block w-100" alt="Remera Homero Simpson">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-negra-gorillaz.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-negra-gorillaz.jpeg" class="d-block w-100" alt="Remera Gorillaz">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-blanca-marvel.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-blanca-marvel.jpeg" class="d-block w-100" alt="Remera Marvel">
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/imagenes/reme-negra-arctic.jpeg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/imagenes/reme-negra-arctic.jpeg" class="d-block w-100" alt="Remera Arctic Monkeys">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer__informacion--media">
+        <div class="footer d-flex flex-wrap justify-content-center align-items-start gap-5">
+            <div class="footer__informacion--media d-flex gap-5 my-4">
                 <div class="footer__informacion">
                     <h3>Navegación</h3>
                     <nav class="footer__nav">
@@ -100,7 +92,7 @@
                     <img class="logo-footer" src="../multimedia/imagenes/amex.png" alt="Amex card logo">
                 </div>
             </div>
-            <div class="footer__informacion--media">
+            <div class="footer__informacion--media d-flex gap-5 my-4">
                 <div class="footer__informacion">
                     <h3>Contactanos</h3>
                     <p>011 6571 3957</p>
