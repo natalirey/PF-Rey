@@ -1,0 +1,32 @@
+footer{
+    background-color: $bg-color;
+    h3{
+        font-size: 16px;
+    }
+    ul{
+        list-style: none;
+        li a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .logo-footer{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* media q */
+@media(max-width: 1070px){
+    footer{
+        h3{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+        ul li a{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.tarjetas-preguntas{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+.tarjeta{
+    width: 40%;
+    background-color: $bg-color-sec;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.tarjeta img{
+    width: 50px;
+}
+.tarjeta ul{
+    list-style: none
+}
+.mapa{
+    width: 90%;
+    height: 200px;
+}
+
+/* media q */
+@media(max-width:1200px){
+    .tarjeta{
+        font-size: 14px;
+        height: auto;
+    }
+    .tarjetas-preguntas{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+}
+@media(max-width:1100px){
+    .tarjeta{
+        width: 60%;
+    }
+}
+@media(max-width:678px){
+    .tarjeta{
+        width: 90%;
+    }
+}

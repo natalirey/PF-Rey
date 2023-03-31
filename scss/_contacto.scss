@@ -1,0 +1,99 @@
+.form-contacto{
+    display: grid;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: $bg-color-sec;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:   "contacto  contacto"
+                            "texto    texto"
+                            "nombre   apellido"
+                            "email     asunto"
+                            "mensaje   mensaje"
+                            "novedades novedades"
+                            "limpiar    enviar";
+}
+.form-contacto label{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form-contacto label input, .form-contacto label textarea{
+    background-color: $bg-color-sec;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.form-contacto h2{
+    grid-area: contacto;
+    text-align: center;
+}
+.form-contacto p{
+    grid-area: texto;
+    text-align: center;
+}
+.form-contacto label:nth-child(3){
+    grid-area: nombre;
+}
+.form-contacto label:nth-child(4){
+    grid-area: apellido;
+}
+.form-contacto label:nth-child(5){
+    grid-area: email;
+}
+.form-contacto label:nth-child(6){
+    grid-area: asunto;
+}
+.form-contacto label:nth-child(7){
+    grid-area: mensaje;
+}
+.form-contacto label:nth-child(8){
+    grid-area: novedades;
+    text-align: center;
+}
+.form-contacto .limpiar{
+    grid-area: limpiar;
+    width: 40%;
+    border-radius: 10px;
+    margin: 5px;
+    justify-self: end;
+}
+.form-contacto .enviar{
+    grid-area: enviar;
+    width: 40%;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: outset;
+    justify-self: start;
+}
+.logos-contacto {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    justify-content: center;
+    gap: 30px;
+}
+@media(max-width: 1070px){
+    .form-contacto h1{
+        font-size: 18px;
+    }
+}
+@media(max-width:900px){
+    .form-contacto{
+        width: auto;
+        grid-template-areas:   "contacto  contacto"
+                                "texto    texto"
+                                "nombre   nombre"
+                                "apellido apellido"
+                                "email    email"  
+                                "asunto    asunto"
+                                "mensaje   mensaje"
+                                "novedades novedades"
+                                "limpiar    enviar";
+    }
+    .logos-contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+}
