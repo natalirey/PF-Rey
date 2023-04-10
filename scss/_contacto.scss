@@ -13,59 +13,59 @@
                             "mensaje   mensaje"
                             "novedades novedades"
                             "limpiar    enviar";
-}
-.form-contacto label{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.form-contacto label input, .form-contacto label textarea{
-    background-color: $bg-color-sec;
-    border: none;
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-.form-contacto h2{
-    grid-area: contacto;
-    text-align: center;
-}
-.form-contacto p{
-    grid-area: texto;
-    text-align: center;
-}
-.form-contacto label:nth-child(3){
-    grid-area: nombre;
-}
-.form-contacto label:nth-child(4){
-    grid-area: apellido;
-}
-.form-contacto label:nth-child(5){
-    grid-area: email;
-}
-.form-contacto label:nth-child(6){
-    grid-area: asunto;
-}
-.form-contacto label:nth-child(7){
-    grid-area: mensaje;
-}
-.form-contacto label:nth-child(8){
-    grid-area: novedades;
-    text-align: center;
-}
-.form-contacto .limpiar{
-    grid-area: limpiar;
-    width: 40%;
-    border-radius: 10px;
-    margin: 5px;
-    justify-self: end;
-}
-.form-contacto .enviar{
-    grid-area: enviar;
-    width: 40%;
-    margin: 5px;
-    border-radius: 10px;
-    border-style: outset;
-    justify-self: start;
+    h2{
+        grid-area: contacto;
+        text-align: center;
+    }
+    p{
+        grid-area: texto;
+        text-align: center;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        input, textarea{
+            background-color: $bg-color-sec;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        &:nth-child(3){
+            grid-area: nombre;
+        }
+        &:nth-child(4){
+            grid-area: apellido;
+        }
+        &:nth-child(5){
+            grid-area: email;
+        }
+        &:nth-child(6){
+            grid-area: asunto;
+        }
+        &:nth-child(7){
+            grid-area: mensaje;
+        }
+        &:nth-child(8){
+            grid-area: novedades;
+            text-align: center;
+        }
+    }
+    .limpiar{
+        grid-area: limpiar;
+        width: 100px;
+        border-radius: 10px;
+        margin: 5px;
+        justify-self: end;
+    }
+    .enviar{
+        grid-area: enviar;
+        width: 100px;
+        margin: 5px;
+        border-radius: 10px;
+        border-style: outset;
+        justify-self: start;
+    }
 }
 .logos-contacto {
     display: flex;
@@ -75,8 +75,10 @@
     gap: 30px;
 }
 @media(max-width: 1070px){
-    .form-contacto h1{
-        font-size: 18px;
+    .form-contacto{
+        h1{
+            font-size: 18px;
+        }
     }
 }
 @media(max-width:900px){

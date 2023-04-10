@@ -1,29 +1,33 @@
 .remera{
     background-color:$bg-color-sec;
-    text-align: center;
-    border-radius: 10px;
+    @extend %text-border;
+    img{
+        width: 90%;
+        margin: 10px;
+    }
 } 
-.remera img{
-    width: 90%;
-    margin: 10px;
-}
 .talles, .como-medir{
     background-color:$bg-color-sec;
-    text-align: center;
-    border-radius: 10px;
+    @extend %text-border;
+    img{
+        width: 70%;
+    }
+    iframe{
+        width: 80%;
+        height: 70%;
+    }
 }
-.talles img{
-    width: 70%;
-}
-.como-medir iframe{
-    width: 80%;
-    height: 70%;
-}
+
 @media(max-width:1200px){
     .remera {
         font-size: 14px;
+        h3{
+            font-size: 16px;
+        }
     }
-    .remera h3, .talles-medidas h3{
+    .talles-medidas{
+    h3{
         font-size: 16px;
+        }
     }
 }

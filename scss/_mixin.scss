@@ -1,0 +1,11 @@
+@mixin sizes($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin bordes ($radio, $ancho){
+    border-style: solid;
+    border-color:black;
+    object-fit: cover;
+    border-radius: $radio;
+    border-width: $ancho;
+}
