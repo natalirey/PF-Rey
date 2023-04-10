@@ -6,24 +6,24 @@
     flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
-    .tarjeta{
-        width: 40%;
-        background-color: $bg-color-sec;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: center;
-        img{
-            width: 50px;
-        }
-        ul{
-            list-style: none
-        }
-        .mapa{
-            width: 90%;
-            height: 200px;
-        }
-    }
 }
+.tarjeta{
+            width: 40%;
+            background-color: $bg-color-sec;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            img{
+                width: 50px;
+            }
+            ul{
+                list-style: none
+            }
+            .mapa{
+                width: 90%;
+                height: 200px;
+            }
+        }
 
 /* media q */
 @media(max-width:1200px){

@@ -295,20 +295,21 @@ body {
   gap: 45px;
   justify-content: center;
 }
-.tarjetas-preguntas .tarjeta {
+
+.tarjeta {
   width: 40%;
   background-color: beige;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
 }
-.tarjetas-preguntas .tarjeta img {
+.tarjeta img {
   width: 50px;
 }
-.tarjetas-preguntas .tarjeta ul {
+.tarjeta ul {
   list-style: none;
 }
-.tarjetas-preguntas .tarjeta .mapa {
+.tarjeta .mapa {
   width: 90%;
   height: 200px;
 }
@@ -386,7 +387,7 @@ body {
 .form-contacto .limpiar {
   grid-area: limpiar;
   width: 100px;
-  border-radius: 10px;
+  border-radius: 2px;
   margin: 5px;
   justify-self: end;
 }
@@ -394,7 +395,7 @@ body {
   grid-area: enviar;
   width: 100px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 2px;
   border-style: outset;
   justify-self: start;
 }
