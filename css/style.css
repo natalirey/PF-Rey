@@ -387,7 +387,7 @@ body {
 .form-contacto .limpiar {
   grid-area: limpiar;
   width: 100px;
-  border-radius: 2px;
+  border-radius: 8px;
   margin: 5px;
   justify-self: end;
 }
@@ -395,7 +395,7 @@ body {
   grid-area: enviar;
   width: 100px;
   margin: 5px;
-  border-radius: 2px;
+  border-radius: 8px;
   border-style: outset;
   justify-self: start;
 }
