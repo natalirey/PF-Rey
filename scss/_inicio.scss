@@ -11,6 +11,11 @@
     z-index: -2;
     margin: 60px auto;
 }
+.titulo a{
+    @extend %boton;
+}
+
+
 @media(max-width: 1270px){
     .messi-remera{
         width: 250px;

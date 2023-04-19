@@ -54,10 +54,18 @@
     .limpiar{
         grid-area: limpiar;
         justify-self: end;
+        padding: 8px;
+        margin-right: 10px;
+        background-color: $bg-color;
+        border-radius: 5px;
     }
     .enviar{
         grid-area: enviar;
         justify-self: start;
+        padding: 8px;
+        margin-left: 10px;
+        background-color: $bg-color;
+        border-radius: 5px;
     }
 }
 .logos-contacto {

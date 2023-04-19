@@ -17,9 +17,41 @@
     font-size: 30px;
     letter-spacing: 2px;
 }
-
-// page precios
-%text-border{
+%tarjetas{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: $bg-color-sec;
+    justify-content: center;
+    text-align: center;
+    img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            background-color: $bg-color;
+            padding: 8px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+}
+%tym{
+    width: 600px;
+    margin: 40px;
+    padding: 20px;
     text-align: center;
     border-radius: 10px;
+    background-color: $bg-color-sec;
+}
+
+%boton{
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: $bg-color;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
 }

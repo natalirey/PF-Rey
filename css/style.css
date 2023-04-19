@@ -37,6 +37,46 @@ body {
   letter-spacing: 2px;
 }
 
+.productos article, .artic {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: beige;
+  justify-content: center;
+  text-align: center;
+}
+.productos article img, .artic img {
+  width: 100%;
+  border-radius: 8px;
+}
+.productos article a, .artic a {
+  color: black;
+  text-decoration: none;
+  background-color: #B8E0D2;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.medir, .talles {
+  width: 600px;
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: beige;
+}
+
+.personaliza a, .titulo a {
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: #B8E0D2;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 .portada-inicio h1 {
   left: 15%;
 }
@@ -241,38 +281,16 @@ body {
     flex-direction: column;
   }
 }
-.form-boots {
-  background-color: beige;
-  border-radius: 10px;
-  font-family: "Roboto", sans-serif;
-  width: 40%;
-}
-
-.form-boots .text-center, .form-control, .form-label {
-  font-family: "Roboto", sans-serif;
-}
-
-.probando {
+.personaliza {
   width: 60%;
   height: 550px;
   margin-left: 20px;
   margin-top: 20px;
   padding: 40px 40px 0 40px;
 }
-.probando h3 {
+.personaliza h3 {
   margin-bottom: 25px;
 }
-.probando a {
-  margin-top: 10px;
-  margin-left: 50px;
-  background-color: #B8E0D2;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-}
-
 .png {
   width: 470px;
   position: absolute;
@@ -290,76 +308,32 @@ body {
   margin-top: 40px;
   width: 380px;
   height: 630px;
-  border: 1px solid black;
-  border-radius: 8px;
-  background-color: beige;
-  justify-content: center;
-  text-align: center;
-}
-.artic h4 {
-  padding: 15px;
-}
-.artic img {
-  width: 100%;
-  border-radius: 8px;
-}
-.artic a {
-  color: black;
-  text-decoration: none;
-  background-color: #B8E0D2;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
-.probando2 {
+.productos {
   padding: 40px;
 }
+.productos article {
+  margin-top: 20px;
+  width: 800px;
+  height: 715px;
+}
+.productos article h4 {
+  padding: 5px;
+}
 
-.reme {
+.nuestras-remeras {
   width: 65%;
   padding: 20px;
   margin: 0 auto;
   text-align: justify;
 }
-.reme h3 {
+.nuestras-remeras h3 {
   text-align: center;
-}
-
-.artic2 {
-  margin-top: 20px;
-  width: 800px;
-  height: 715px;
-  border: 1px solid black;
-  border-radius: 8px;
-  background-color: beige;
-  justify-content: center;
-  text-align: center;
-}
-.artic2 h4 {
-  padding: 5px;
-}
-.artic2 img {
-  width: 100%;
-  border-radius: 8px;
-}
-.artic2 a {
-  color: black;
-  text-decoration: none;
-  background-color: #B8E0D2;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 .talles {
-  width: 600px;
-  margin: 40px;
   margin-left: 60px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: beige;
 }
 .talles img {
   width: 100%;
@@ -367,14 +341,8 @@ body {
 }
 
 .medir {
-  width: 600px;
   height: 450px;
-  margin: 40px;
   margin-right: 60px;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: beige;
 }
 .medir iframe {
   width: 100%;
@@ -404,8 +372,8 @@ body {
   list-style: none;
 }
 .tarjeta .mapa {
-  width: 90%;
-  height: 200px;
+  width: 100%;
+  height: 250px;
 }
 
 /* media q */
@@ -481,10 +449,18 @@ body {
 .form-contacto .limpiar {
   grid-area: limpiar;
   justify-self: end;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: #B8E0D2;
+  border-radius: 5px;
 }
 .form-contacto .enviar {
   grid-area: enviar;
   justify-self: start;
+  padding: 8px;
+  margin-left: 10px;
+  background-color: #B8E0D2;
+  border-radius: 5px;
 }
 
 .logos-contacto {
