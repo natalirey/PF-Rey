@@ -9,7 +9,7 @@
     grid-template-areas:   "contacto  contacto"
                             "texto    texto"
                             "nombre   apellido"
-                            "email     asunto"
+                            "email     cel"
                             "mensaje   mensaje"
                             "novedades novedades"
                             "limpiar    enviar";
@@ -41,7 +41,7 @@
             grid-area: email;
         }
         &:nth-child(6){
-            grid-area: asunto;
+            grid-area: cel;
         }
         &:nth-child(7){
             grid-area: mensaje;
@@ -53,17 +53,10 @@
     }
     .limpiar{
         grid-area: limpiar;
-        width: 100px;
-        border-radius: 8px;
-        margin: 5px;
         justify-self: end;
     }
     .enviar{
         grid-area: enviar;
-        width: 100px;
-        margin: 5px;
-        border-radius: 8px;
-        border-style: outset;
         justify-self: start;
     }
 }
@@ -84,12 +77,13 @@
 @media(max-width:900px){
     .form-contacto{
         width: auto;
+        margin-top: 0;
         grid-template-areas:   "contacto  contacto"
                                 "texto    texto"
                                 "nombre   nombre"
                                 "apellido apellido"
                                 "email    email"  
-                                "asunto    asunto"
+                                "cel       cel"
                                 "mensaje   mensaje"
                                 "novedades novedades"
                                 "limpiar    enviar";
