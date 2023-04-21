@@ -1,14 +1,15 @@
 .personaliza{
     width: 60%;
     height: 550px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: 20px;
+
     padding: 40px 40px 0 40px;
     h3{
         margin-bottom:25px;
     }
     a{
         @extend %boton;
+        margin: 0 auto;
     }
 }
 .png{
@@ -18,10 +19,8 @@
 }
 .clientes{
     padding: 40px;
-    margin-left: 20px;
     margin-bottom: 50px;
     text-align: center;
-
 }
 .artic{
     @extend %tarjetas;
@@ -30,5 +29,60 @@
     height: 630px;
     h4{
         padding: 15px;
+    }
+    img{
+        height: 500px;
+    }
+}
+
+@media(max-width: 1170px){
+    .personaliza{
+        font-size: 18px;
+    }
+    .png{
+        width: 400px;
+        height: 465px;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:1022px){
+    .page-personaliza{
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    .personaliza{
+        width: 90%;
+        height: auto;
+    }
+    }
+
+    .png{
+        margin-top: 0px;
+        position: relative;
+        top:-90px;
+        display: block;
+        z-index: 20;
+        align-self: flex-end;
+}
+.clientes{
+    padding: 10px;
+}
+}
+@media(max-width:804px){
+    .png{
+        display: none;
+    }
+    .clientes{
+        margin-top: 20px;
+    }
+}
+@media(max-width:650px){
+    .personaliza{
+        margin: 0;
+        padding: 10px;
+        text-align: center;
     }
 }

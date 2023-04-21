@@ -86,7 +86,7 @@ body {
 }
 
 /* MEDIA Q  */
-@media (max-width: 1070px) {
+@media (max-width: 1100px) {
   .portada-inicio video {
     height: 350px;
     margin-top: 68px;
@@ -172,24 +172,24 @@ body {
 }
 
 /* media q */
-@media (max-width: 1070px) {
+@media (max-width: 1100px) {
   .navegador {
-    height: 50px;
-    margin-top: 18px;
+    height: 60px;
+    margin-top: 22px;
   }
   .navegador .logo {
+    height: 60px;
     margin-top: 0;
-    height: 50px;
   }
   .navegador ul li a {
-    font-size: 15px;
+    font-size: 18px;
   }
   .cuotas, .footer__copyright p {
-    height: 18px;
-    font-size: 13px;
+    font-size: 16px;
+    height: 22px;
   }
 }
-@media (max-width: 920px) {
+@media (max-width: 1022px) {
   .navegador .fa-bars {
     display: block;
     font-size: 32px;
@@ -211,6 +211,9 @@ body {
   }
   .navegador ul:hover {
     right: 0;
+  }
+  .navegador ul li a {
+    font-size: 16px;
   }
 }
 .messi-remera {
@@ -255,10 +258,10 @@ body {
     width: 80%;
   }
   .titulo h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
-  .titulo .btn {
-    font-size: 14px;
+  .titulo a {
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
@@ -269,12 +272,6 @@ body {
     width: 200px;
     height: 200px;
   }
-  .titulo h2 {
-    font-size: 14px;
-  }
-  .titulo .btn {
-    font-size: 10px;
-  }
 }
 @media (max-width: 420px) {
   .img-inicio {
@@ -284,13 +281,16 @@ body {
 .personaliza {
   width: 60%;
   height: 550px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px;
   padding: 40px 40px 0 40px;
 }
 .personaliza h3 {
   margin-bottom: 25px;
 }
+.personaliza a {
+  margin: 0 auto;
+}
+
 .png {
   width: 470px;
   position: absolute;
@@ -299,7 +299,6 @@ body {
 
 .clientes {
   padding: 40px;
-  margin-left: 20px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -312,7 +311,59 @@ body {
 .artic h4 {
   padding: 15px;
 }
+.artic img {
+  height: 500px;
+}
 
+@media (max-width: 1170px) {
+  .personaliza {
+    font-size: 18px;
+  }
+  .png {
+    width: 400px;
+    height: 465px;
+    object-fit: cover;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1022px) {
+  .page-personaliza {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+  .page-personaliza .personaliza {
+    width: 90%;
+    height: auto;
+  }
+  .png {
+    margin-top: 0px;
+    position: relative;
+    top: -90px;
+    display: block;
+    z-index: 20;
+    align-self: flex-end;
+  }
+  .clientes {
+    padding: 10px;
+  }
+}
+@media (max-width: 804px) {
+  .png {
+    display: none;
+  }
+  .clientes {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .personaliza {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
 .productos {
   padding: 40px;
 }

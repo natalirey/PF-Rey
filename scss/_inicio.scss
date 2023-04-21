@@ -32,10 +32,10 @@
         width: 80%;
     }
     .titulo h2{
-        font-size: 24px;
+        font-size: 18px;
     }
-    .titulo .btn{
-        font-size: 14px;
+    .titulo a{
+        font-size: 18px;
     }
 }
 @media(max-width: 600px){
@@ -44,12 +44,6 @@
     }
     .messi-copa{
         @include sizes (200px,200px);
-    }
-    .titulo h2{
-        font-size: 14px;
-    }
-    .titulo .btn{
-        font-size: 10px;
     }
 }
 @media(max-width: 420px){
