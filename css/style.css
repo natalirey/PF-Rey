@@ -37,18 +37,18 @@ body {
   letter-spacing: 2px;
 }
 
-.productos article, .artic {
+.productos article, .clientes .artic {
   border: 1px solid black;
   border-radius: 8px;
   background-color: beige;
   justify-content: center;
   text-align: center;
 }
-.productos article img, .artic img {
+.productos article img, .clientes .artic img {
   width: 100%;
   border-radius: 8px;
 }
-.productos article a, .artic a {
+.productos article a, .clientes .artic a {
   color: black;
   text-decoration: none;
   background-color: #B8E0D2;
@@ -58,7 +58,7 @@ body {
 }
 
 .medir, .talles {
-  width: 600px;
+  width: 580px;
   margin: 40px;
   padding: 20px;
   text-align: center;
@@ -249,9 +249,6 @@ body {
     width: 280px;
     height: 280px;
   }
-  .titulo h2 {
-    font-size: 25px;
-  }
 }
 @media (max-width: 800px) {
   .carousel-inner {
@@ -302,16 +299,15 @@ body {
   margin-bottom: 50px;
   text-align: center;
 }
-
-.artic {
+.clientes .artic {
   margin-top: 40px;
   width: 380px;
   height: 630px;
 }
-.artic h4 {
+.clientes .artic h4 {
   padding: 15px;
 }
-.artic img {
+.clientes .artic img {
   height: 500px;
 }
 
@@ -372,6 +368,10 @@ body {
   width: 800px;
   height: 715px;
 }
+.productos article img {
+  height: 500px;
+  object-fit: cover;
+}
 .productos article h4 {
   padding: 5px;
 }
@@ -386,9 +386,6 @@ body {
   text-align: center;
 }
 
-.talles {
-  margin-left: 60px;
-}
 .talles img {
   width: 100%;
   border-radius: 10px;
@@ -396,10 +393,67 @@ body {
 
 .medir {
   height: 450px;
-  margin-right: 60px;
 }
 .medir iframe {
   width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 900px) {
+  .nuestras-remeras {
+    width: 100%;
+    font-size: 18px;
+  }
+  .probando article {
+    font-size: 18px;
+    height: 640px;
+  }
+}
+@media (max-width: 700px) {
+  .tym {
+    gap: 10px;
+  }
+  .talles {
+    margin: 0;
+  }
+  .medir {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+.probando {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.probando article {
+  width: 400px;
+  height: 700px;
+  text-align: center;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.probando article h4, .probando article p {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.probando article a {
+  text-decoration: none;
+  color: black;
+  background-color: #B8E0D2;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.probando article img {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .tarjetas-preguntas {
@@ -438,7 +492,7 @@ body {
     gap: 20px;
   }
   .tarjetas-preguntas .tarjeta {
-    font-size: 14px;
+    font-size: 16px;
     height: auto;
   }
 }

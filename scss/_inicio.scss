@@ -15,7 +15,6 @@
     @extend %boton;
 }
 
-
 @media(max-width: 1270px){
     .messi-remera{
         width: 250px;
@@ -23,9 +22,6 @@
     .messi-copa{
         @include sizes (280px,280px);
     }
-    .titulo h2{
-    font-size: 25px;
-}
 }
 @media(max-width:800px){
     .carousel-inner{
